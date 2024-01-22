@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Adopt a Pet</title>
+        <link href="../css/index.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>Adopt a Pet</h1><!--Navbar for the adopt page-->
+            <nav>
+                <ul>
+                    <li><a href="../html/index.html">Home</a></li>
+
+                    <li><a href="../html/adopt.html">Adopt</a></li>
+
+                    <li><a href="../html/donate.html">Donate</a></li>
+
+                    <li><a href="../html/contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header> <!--End of the navbar-->
+
+        <section id="available_pets"> <!--This section titles the body and adds a little life to the page-->
+            <h2>Available Pets</h2>
+            <p>Find your new furry friend from our available pets!</p>
+        </section>
+
+        <section id="adoption"> <!--This section adds details and pictures of adoptable pets-->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Species</th>
+                        <th>Breed</th>
+                        <th>Age</th>
+                        <th>Adoption Status</th>
+                        <th>Image</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Max</td>
+                        <td>Dog</td>
+                        <td>Pitbull Mix</td>
+                        <td>3 Years</td>
+                        <td>Available</td>
+                        <td><img id="dawg" src="../images/dawg.webp"></td>
+                    </tr>
+
+
+                    <tr>
+                        <td>Whiskers</td>
+                        <td>Cat</td>
+                        <td>Calico</td>
+                        <td>2 Years</td>
+                        <td>Available</td>
+                        <td><img id="cat" src="../images/kitty.webp"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Luna</td>
+                        <td>Cat</td>
+                        <td>Orange</td>
+                        <td>2 Years</td>
+                        <td>Adopted</td>
+                        <td><img id="kitten2" src="../images/kitten.jpg"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Ace</td>
+                        <td>Dog</td>
+                        <td>Beagle</td>
+                        <td>6 Months</td>
+                        <td>Available</td>
+                        <td><img id="puppy" src="../images/pup.jpg"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <footer><!--This footer part is on every page, and sets up the copyright and chat buttons-->
+            <p>&copy; 2023 Conner's Animal Shelter<button id="chat">Chat</button></p> 
+        </footer>
+    </body>
+</html>

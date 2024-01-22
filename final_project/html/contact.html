@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Adopt a Pet</title>
+        <link href="../css/index.css" rel="stylesheet">
+    </head>
+    <body>
+        <header> <!--Navbar for the contact page-->
+            <h1>Contact Us</h1>
+            <nav>
+                <ul>
+                    <li><a href="../html/index.html">Home</a></li>
+
+                    <li><a href="../html/adopt.html">Adopt</a></li>
+
+                    <li><a href="../html/donate.html">Donate</a></li>
+
+                    <li><a href="../html/contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header> <!--End of navbar-->
+
+        <section id="in_touch"> <!--This section adds the ability to contact the website owners with any questions or concerns via a form-->
+            <h2>Get in Touch</h2>
+            <p>Feel free to contact us with any questions or concerns.</p>
+            <br>
+
+            <form id="contacting">
+                <label for="first_name">First Name:</label>
+                <input type="text" id="first_name" name="first_name">
+
+                <label for="last_name">Last Name:</label>
+                <input type="text" id="last_name" name="last_name">
+
+                <label for="phone_number">Phone Number:</label>
+                <input type="number" id="number" name="number">
+
+                <label for="question">Questions/Concern:</label>
+                <textarea class="message" name="message" rows="8"></textarea>
+                
+                <button class="submit "type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section id="visit"> <!--This section gives the address of the shelter location for people looking to adopt-->
+            <h2>Visit Us</h2>
+            <p>Stop by our shelter during out operating hours!</p>
+            <address>
+                678 South Mountain RD Emporium, PA<br>
+                15834
+            </address>
+        </section>
+
+        <footer> <!--This footer part is on every page, and sets up the copyright and chat buttons-->
+            <p>&copy; 2023 Conner's Animal Shelter<button id="chat">Chat</button></p>
+        </footer>
+    </body>
+</html>

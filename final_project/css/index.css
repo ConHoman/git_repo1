@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * { /*This sets rid of the margins and padding for the page, and sets font preferences.*/
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -211,4 +212,219 @@ input, textarea { /*Makes it so the input and text area take 100% of the possibl
 
 #visit {
     text-align: center;
+=======
+* { /*This sets rid of the margins and padding for the page, and sets font preferences.*/
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body { /*This section makes the body color azure*/
+    background-color: azure;
+}
+
+header { /*This section makes the background of the header a dark color, makes the text white, aligns the text to the center, and gives some padding to the header tag.*/
+    background-color: rgb(43, 43, 43);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul { /*This section makes the ul that is in the nav tag have these specific styles.*/
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav li { /*This section makes the li that is in the nav tag have these specific styles.*/
+    margin-right: 15px;
+}
+
+nav a { /*This section makes things withing the nav tag have these styles.*/
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover { /*This makes it so when you hover on the buttons in the navbar, they change colors.*/
+    color: rgb(43, 43, 43);
+    background-color: white;
+}
+
+section { /*Makes all sections on the pages have 20 pixels of padding*/
+    padding: 20px;
+}
+
+footer { /*Gives the footer these styles*/
+    background-color: rgb(43, 43, 43);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0; /*Found this from the internet, helpful for keeping the footer where i want.*/
+    width: 100%;
+}
+
+#welcome-section, #featured-animals, #about-us { /*Makes these tags have some space at the bottom of them*/
+    margin-bottom: 30px;
+}
+
+
+
+.animal-card { /*Gives a border and some padding to the animal cards. Would be crowded without.*/
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+
+}
+
+
+
+#welcome-section { /*Makes the text go to the middle in the welcome section*/
+    text-align: center;
+}
+
+#animals { /*Makes the animal cards into a grid to make it look good*/
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+#about-us { /*Gives styles to the about us section*/
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+
+#cat1 { /*These give the specifications for the dimensions of the images I used for the project.*/
+    width: 500px;
+}
+
+#bunny1 {
+    width: 400px;
+    height:400px
+}
+
+#cat2 {
+    width: 400px;
+    height: 500px
+}
+
+#dog1 {
+    width: 500px;
+}
+
+#dawg, #cat, #kitten2, #puppy {
+    width: 400px;
+} /*End of the image specifications*/
+
+table { /*Makes the animal cards in the adopt section look more presentable.*/
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+th, td { /*Gives a border and center the text in the th and td sections of the table.*/
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+th { /*Gives a background color for the th section*/
+    background-color: gray;
+}
+
+#available_pets { /*Aligns text of the available pets to the center.*/
+    text-align: center;
+}
+
+@media (max-width: 750px) { /*These media sections make it so if you make the screen size smaller, the animal cards will change position on your screen.*/
+    #animals {
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 751px) and (max-width: 999px) {
+    #animals {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1000px) {
+    #animals {
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+#chat { /*Makes the chat button look better on the pages.*/
+    position: fixed;
+    bottom: 1;
+    right: 0;
+    margin-right: 10px;   
+    border: none;
+    width: 50px;
+    height: 20px;
+    color: rgb(43, 43, 43);
+}
+
+#chat:hover { /*Makes it so when you hover over the chat button it changes colors.*/
+    background-color: black;
+    color: white;
+}
+
+form { /*Makes the form width 400 pixels and the margins automatically set*/
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label { /*Makes it so the label tag is a block*/
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+input, textarea { /*Makes it so the input and text area take 100% of the possible area.*/
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+#donation, #contacting { /*Makes the text in the donation and contacting tags be centered.*/
+    text-align: center;
+}
+
+.submit { /*Gives the submit button some flare.*/
+    border: none;
+    background-color: green;
+    width: 100px;
+    height: 40px;
+    color: whitesmoke;
+    font-weight: bolder;
+    font-size: large;
+}
+
+.submit:hover { /*Makes the submit button change color when hovered over.*/
+    background-color: black;
+}
+
+#first_name, #last_name { /*Makes the first and last name tags tage up 20% of the available space.*/
+    width: 20%;
+}
+
+#number { /*Makes the number tag take 40% of the available space.*/
+    width: 40%;
+}
+
+#in_touch { /* These last two just align text to the center of the page.*/
+    text-align: center;
+}
+
+#visit {
+    text-align: center;
+>>>>>>> d889835ed4e1721c0d147e6435201e1b23b94fc6
 }
